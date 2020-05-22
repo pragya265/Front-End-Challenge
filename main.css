@@ -1,48 +1,136 @@
-* { box-sizing: border-box; } 
-
-body { font-family: sans-serif; }
-
-/* ---- grid ---- */
-
-.grid {
-  background: #DDD;
-  max-width: 1200px;
+.main-grid{
+  display: grid;
+  grid-template-columns: 200px 0px;
+  background-color: white;
+  padding: 20px;
+  width: 50%;
+  height: 690px;
+  position: fixed; 
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  align-content: center;
+  position: absolute;
 }
 
-/* clear fix */
-.grid:after {
-  content: '';
-  display: block;
-  clear: both;
+.grid-container-1 {
+  position: relative;
+  display: grid;
+  height: 70%;
+  grid-template-columns: 100px;
+  grid-template-rows: repeat(7, 70px);
+  grid-gap: 10px;
+  margin: 50px;
+  align-content: center;
+  align-items: center;
 }
 
-/* ---- .grid-item ---- */
-
-.grid-item {
-  float: left;
-  width: 100px;
-  height: 100px;
-  background: #C09;
-  border: 2px solid hsla(0, 0%, 0%, 0.5);
+.grid-container-2{
+  position: relative;
+  display: grid;
+  height: 70%;
+  grid-template-columns: repeat(5, 100px);
+  grid-template-rows: repeat(7, 70px);
+  grid-gap: 10px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  align-content: center;
+  align-items: center;
 }
 
-.grid-item--width2 { width: 200px; }
-.grid-item--height2 { height: 200px; }
-
-.grid-item:hover {
-  border-color: hsla(0, 0%, 100%, 0.5);
-  cursor: move;
+.main-grid > div {
+  text-align: center;
+  padding: 50px 0;
 }
 
-.grid-item.ui-draggable-dragging,
-.grid-item.is-positioning-post-drag {
-  background: #C90;
-  z-index: 2;
+.main2{
+  grid-column-start: 1;
+  grid-column-end: 6;
+  border-bottom: 1px solid gray;
 }
 
-.packery-drop-placeholder {
-  outline: 3px dashed hsla(0, 0%, 0%, 0.5);
-  outline-offset: -6px;
-  -webkit-transition: -webkit-transform 0.2s;
-          transition: transform 0.2s;
+.main-head, main{
+  border-bottom: 1px solid gray;
+
 }
+
+.main{
+  padding: 20px;
+  position: relative;
+  align-items: center;
+  border-bottom: 1px solid gray;
+}
+
+.box{
+  width: 20px;
+  height: 20px;
+  border: 1px solid grey;
+  padding: 20px;
+  text-align: center;
+  margin-left: 20px;
+}
+
+.item{
+  width: 60px;
+  height: 40px;
+  padding: 20px;
+  align-items: center;
+}
+
+.close{
+  border: none;
+  background-color: white;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+}
+
+.vl {
+  border-left: 1px solid gray;
+  height: 550px;
+  position: absolute;
+  left: 38%;
+  top: 13%;
+}
+
+.vl1 {
+  border-left: 1px solid gray;
+  height: 500px;
+  position: absolute;
+  left: 45%;
+  top: 20%;
+}
+
+.vl2 {
+  border-left: 1px solid gray;
+  height: 500px;
+  position: absolute;
+  left: 52%;
+  top: 20%;
+}
+
+.vl3 {
+  border-left: 1px solid gray;
+  height: 500px;
+  position: absolute;
+  left: 59%;
+  top: 20%;
+}
+
+.vl4 {
+  border-left: 1px solid gray;
+  height: 500px;
+  position: absolute;
+  left: 66.3%;
+  top: 20%;
+}
+
+.vl5 {
+  border-left: 1px solid gray;
+  height: 550px;
+  position: absolute;
+  left: 73.4%;
+  top: 13%;
+}
+
+
