@@ -75,6 +75,9 @@
   height: 40px;
   padding: 20px;
   align-items: center;
+  border-left: 1px solid gray;
+  border-right: 1px solid gray;
+  border-bottom: 1px dashed #c0c0c0;
 }
 
 .close{
@@ -83,54 +86,6 @@
   position: absolute;
   top: 0px;
   right: 0px;
-}
-
-.vl {
-  border-left: 1px solid gray;
-  height: 550px;
-  position: absolute;
-  left: 38%;
-  top: 13%;
-}
-
-.vl1 {
-  border-left: 1px solid gray;
-  height: 500px;
-  position: absolute;
-  left: 45%;
-  top: 20%;
-}
-
-.vl2 {
-  border-left: 1px solid gray;
-  height: 500px;
-  position: absolute;
-  left: 52%;
-  top: 20%;
-}
-
-.vl3 {
-  border-left: 1px solid gray;
-  height: 500px;
-  position: absolute;
-  left: 59%;
-  top: 20%;
-}
-
-.vl4 {
-  border-left: 1px solid gray;
-  height: 500px;
-  position: absolute;
-  left: 66.3%;
-  top: 20%;
-}
-
-.vl5 {
-  border-left: 1px solid gray;
-  height: 550px;
-  position: absolute;
-  left: 73.4%;
-  top: 13%;
 }
 
 
